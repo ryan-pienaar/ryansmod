@@ -17,6 +17,8 @@ import java.util.stream.Collectors;
 @Mod.EventBusSubscriber(modid = RyansMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class Config
 {
+    @SuppressWarnings("deprecation")
+
     private static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
 
     private static final ForgeConfigSpec.BooleanValue LOG_DIRT_BLOCK = BUILDER
@@ -42,6 +44,7 @@ public class Config
     public static int magicNumber;
     public static String magicNumberIntroduction;
     public static Set<Item> items;
+
 
     private static boolean validateItemName(final Object obj)
     {
