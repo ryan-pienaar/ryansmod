@@ -18,7 +18,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> ZENITH_CRYSTAL_ORE_DETECTOR = ITEMS.register("zenith_crystal_ore_detector",
-            () -> new ZenithCrystalOreDetectorItem(new Item.Properties().durability(100)));
+            () -> new ZenithCrystalOreDetectorItem(new Item.Properties().durability(150)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
