@@ -28,6 +28,12 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.ZENITH_CRYSTAL_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_ZENITH_CRYSTAL_BLOCK.get());
 
+                        // Add ores to the creative tab
+                        pOutput.accept(ModBlocks.ZENITH_CRYSTAL_ORE.get());
+                        pOutput.accept(ModBlocks.DEEPSLATE_ZENITH_CRYSTAL_ORE.get());
+                        pOutput.accept(ModBlocks.NETHER_ZENITH_CRYSTAL_ORE.get());
+                        pOutput.accept(ModBlocks.END_STONE_ZENITH_CRYSTAL_ORE.get());
+
                     })
                     .build());
 

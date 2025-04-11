@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ryansmod:block/end_stone_zenith_crystal_ore"
+  }
+}

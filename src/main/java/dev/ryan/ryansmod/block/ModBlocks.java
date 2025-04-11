@@ -2,10 +2,12 @@ package dev.ryan.ryansmod.block;
 
 import dev.ryan.ryansmod.RyansMod;
 import dev.ryan.ryansmod.item.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -19,11 +21,41 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, RyansMod.MOD_ID);
 
+    // Block of Zenith Crystal
     public static final RegistryObject<Block> ZENITH_CRYSTAL_BLOCK = register("zenith_crystal_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OBSIDIAN).sound(SoundType.AMETHYST)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.AMETHYST)));
 
+    // Block of Raw Zenith Crystal
     public static final RegistryObject<Block> RAW_ZENITH_CRYSTAL_BLOCK = register("raw_zenith_crystal_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OBSIDIAN)));
+
+    // Zenith Crystal Ore
+    public static final RegistryObject<Block> ZENITH_CRYSTAL_ORE = register("zenith_crystal_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .strength(50f)
+                    .requiresCorrectToolForDrops(), UniformInt.of(14, 28)
+            ));
+
+    // Deepslate Zenith Crystal Ore
+    public static final RegistryObject<Block> DEEPSLATE_ZENITH_CRYSTAL_ORE = register("deepslate_zenith_crystal_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
+                    .strength(40f)
+                    .requiresCorrectToolForDrops(), UniformInt.of(12, 24)
+            ));
+
+    // Nether Zenith Crystal Ore
+    public static final RegistryObject<Block> NETHER_ZENITH_CRYSTAL_ORE = register("nether_zenith_crystal_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
+                    .strength(40f)
+                    .requiresCorrectToolForDrops(), UniformInt.of(12, 24)
+            ));
+
+    // End Stone Zenith Crystal Ore
+    public static final RegistryObject<Block> END_STONE_ZENITH_CRYSTAL_ORE = register("end_stone_zenith_crystal_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE)
+                    .strength(50f)
+                    .requiresCorrectToolForDrops(), UniformInt.of(14, 28)
+            ));
 
     private static <T extends Block> RegistryObject<T> register(final String name, final Supplier<T> block) {
         RegistryObject<T> blockObj = BLOCKS.register(name, block);

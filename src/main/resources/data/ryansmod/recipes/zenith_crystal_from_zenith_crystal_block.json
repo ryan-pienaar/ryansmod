@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ryansmod:zenith_crystal_block"
+    }
+  ],
+  "result": {
+    "item": "ryansmod:zenith_crystal",
+    "count": 9
+  }
+}
