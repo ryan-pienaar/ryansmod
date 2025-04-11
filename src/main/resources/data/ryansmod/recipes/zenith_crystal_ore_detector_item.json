@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+      "  S",
+      " I ",
+      "###"
+    ],
+  "key": {
+    "#": {
+      "item": "ryansmod:zenith_crystal"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+    "result": {
+        "item": "ryansmod:zenith_crystal_ore_detector",
+        "count": 1
+    }
+}
