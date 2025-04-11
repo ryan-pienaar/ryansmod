@@ -13,6 +13,9 @@ public class ModItems {
     public static final RegistryObject<Item> ZENITH_CRYSTAL = ITEMS.register("zenith_crystal",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> RAW_ZENITH_CRYSTAL = ITEMS.register("raw_zenith_crystal",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

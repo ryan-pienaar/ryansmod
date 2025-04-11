@@ -1,0 +1,37 @@
+package dev.ryan.ryansmod.item;
+
+import dev.ryan.ryansmod.RyansMod;
+import dev.ryan.ryansmod.block.ModBlocks;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.RegistryObject;
+
+public class ModCreativeModeTabs {
+    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
+            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, RyansMod.MOD_ID);
+
+    public static final RegistryObject<CreativeModeTab> RYANS_MOD_TAB = CREATIVE_MODE_TABS.register("ryans_mod_tab",
+            () -> CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModItems.ZENITH_CRYSTAL.get()))
+                    .title(Component.translatable("creativetab.ryans_mod_tab"))
+                    .displayItems((pParameters, pOutput) -> {
+
+                        // Add items to the creative tab
+                        pOutput.accept(ModItems.ZENITH_CRYSTAL.get());
+                        pOutput.accept(ModItems.RAW_ZENITH_CRYSTAL.get());
+
+                        // Add blocks to the creative tab
+                        pOutput.accept(ModBlocks.ZENITH_CRYSTAL_BLOCK.get());
+                        pOutput.accept(ModBlocks.RAW_ZENITH_CRYSTAL_BLOCK.get());
+
+                    })
+                    .build());
+
+    public static void register(IEventBus eventBus) {
+        CREATIVE_MODE_TABS.register(eventBus);
+    }
+}

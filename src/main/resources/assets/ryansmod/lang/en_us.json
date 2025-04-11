@@ -1,3 +1,9 @@
 {
-  "item.ryansmod.zenith_crystal": "Zenith Crystal"
+  "item.ryansmod.zenith_crystal": "Zenith Crystal",
+  "item.ryansmod.raw_zenith_crystal": "Raw Zenith Crystal",
+
+  "block.ryansmod.zenith_crystal_block": "Block of Zenith Crystal",
+  "block.ryansmod.raw_zenith_crystal_block": "Block of Raw Zenith Crystal",
+
+  "creativetab.ryans_mod_tab": "Ryan's Mod"
 }
