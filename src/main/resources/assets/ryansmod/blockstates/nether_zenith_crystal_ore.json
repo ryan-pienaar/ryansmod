@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-        "model": "ryansmod:block/deepslate_zenith_crystal_ore"
+        "model": "ryansmod:block/nether_zenith_crystal_ore"
     }
   }
 }
