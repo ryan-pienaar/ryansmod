@@ -2,13 +2,15 @@
   "item.ryansmod.zenith_crystal": "Zenith Crystal",
   "item.ryansmod.raw_zenith_crystal": "Raw Zenith Crystal",
 
+  "item.ryansmod.zenith_crystal_ore_detector": "Zenith Crystal Ore Detector",
+
   "block.ryansmod.zenith_crystal_block": "Block of Zenith Crystal",
   "block.ryansmod.raw_zenith_crystal_block": "Block of Raw Zenith Crystal",
 
   "block.ryansmod.zenith_crystal_ore": "Zenith Crystal Ore",
   "block.ryansmod.deepslate_zenith_crystal_ore": "Deepslate Zenith Crystal Ore",
   "block.ryansmod.nether_zenith_crystal_ore": "Nether Zenith Crystal Ore",
-    "block.ryansmod.end_stone_zenith_crystal_ore": "Endstone Zenith Crystal Ore",
+  "block.ryansmod.end_stone_zenith_crystal_ore": "End Stone Zenith Crystal Ore",
 
   "creativetab.ryans_mod_tab": "Ryan's Mod"
 }

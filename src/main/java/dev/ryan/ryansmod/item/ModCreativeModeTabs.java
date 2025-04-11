@@ -23,6 +23,7 @@ public class ModCreativeModeTabs {
                         // Add items to the creative tab
                         pOutput.accept(ModItems.ZENITH_CRYSTAL.get());
                         pOutput.accept(ModItems.RAW_ZENITH_CRYSTAL.get());
+                        pOutput.accept(ModItems.ZENITH_CRYSTAL_ORE_DETECTOR.get());
 
                         // Add blocks to the creative tab
                         pOutput.accept(ModBlocks.ZENITH_CRYSTAL_BLOCK.get());
