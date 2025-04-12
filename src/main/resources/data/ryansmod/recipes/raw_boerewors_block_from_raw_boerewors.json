@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+      "###",
+      "###",
+      "###"
+    ],
+  "key": {
+    "#": {
+      "item": "ryansmod:raw_boerewors"
+    }
+  },
+    "result": {
+        "item": "ryansmod:raw_boerewors_block",
+        "count": 1
+    }
+}

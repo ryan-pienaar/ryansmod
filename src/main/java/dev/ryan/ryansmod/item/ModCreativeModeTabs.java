@@ -35,7 +35,6 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.RAW_ZENITH_CRYSTAL_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_BOEREWORS_BLOCK.get());
                         pOutput.accept(ModBlocks.COOKED_BOEREWORS_BLOCK.get());
-                        pOutput.accept(ModBlocks.BOEREWORS_ROLL_BLOCK.get());
 
                         // Add ores to the creative tab
                         pOutput.accept(ModBlocks.ZENITH_CRYSTAL_ORE.get());

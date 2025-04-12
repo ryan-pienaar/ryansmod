@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ryansmod:cooked_boerewors_block"
+    }
+  ],
+  "result": {
+    "item": "ryansmod:cooked_boerewors",
+    "count": 9
+  }
+}

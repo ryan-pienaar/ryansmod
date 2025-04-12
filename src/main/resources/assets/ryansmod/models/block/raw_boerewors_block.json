@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ryansmod:block/raw_boerewors_block"
+  }
+}
