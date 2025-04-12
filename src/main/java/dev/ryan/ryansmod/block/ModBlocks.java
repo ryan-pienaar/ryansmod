@@ -57,6 +57,46 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops(), UniformInt.of(14, 28)
             ));
 
+    // Raw Boerewors Block
+    public static final RegistryObject<Block> RAW_BOEREWORS_BLOCK = register("raw_boerewors_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL).sound(SoundType.WOOL)));
+
+    // Cooked Boerewors Block
+    public static final RegistryObject<Block> COOKED_BOEREWORS_BLOCK = register("cooked_boerewors_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL).sound(SoundType.WOOL)));
+
+    // Boerewors Roll Block
+    public static final RegistryObject<Block> BOEREWORS_ROLL_BLOCK = register("boerewors_roll_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL).sound(SoundType.WOOL)));
+
+    // Boerewors Ore
+    public static final RegistryObject<Block> BOEREWORS_ORE = register("boerewors_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .strength(5f)
+                    .requiresCorrectToolForDrops(), UniformInt.of(8, 16)
+            ));
+
+    // Deepslate Boerewors Ore
+    public static final RegistryObject<Block> DEEPSLATE_BOEREWORS_ORE = register("deepslate_boerewors_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
+                    .strength(4f)
+                    .requiresCorrectToolForDrops(), UniformInt.of(6, 12)
+            ));
+
+    // Nether Boerewors Ore
+    public static final RegistryObject<Block> NETHER_BOEREWORS_ORE = register("nether_boerewors_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
+                    .strength(4f)
+                    .requiresCorrectToolForDrops(), UniformInt.of(6, 12)
+            ));
+
+    // End Stone Boerewors Ore
+    public static final RegistryObject<Block> END_STONE_BOEREWORS_ORE = register("end_stone_boerewors_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE)
+                    .strength(5f)
+                    .requiresCorrectToolForDrops(), UniformInt.of(8, 16)
+            ));
+
     private static <T extends Block> RegistryObject<T> register(final String name, final Supplier<T> block) {
         RegistryObject<T> blockObj = BLOCKS.register(name, block);
         registerBlockItem(name, blockObj);

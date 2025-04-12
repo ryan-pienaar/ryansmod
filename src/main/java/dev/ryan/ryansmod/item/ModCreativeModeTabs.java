@@ -25,15 +25,27 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.RAW_ZENITH_CRYSTAL.get());
                         pOutput.accept(ModItems.ZENITH_CRYSTAL_ORE_DETECTOR.get());
 
+                        //Boerewors items
+                        pOutput.accept(ModItems.RAW_BOEREWORS.get());
+                        pOutput.accept(ModItems.COOKED_BOEREWORS.get());
+                        pOutput.accept(ModItems.BOEREWORS_ROLL.get());
+
                         // Add blocks to the creative tab
                         pOutput.accept(ModBlocks.ZENITH_CRYSTAL_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_ZENITH_CRYSTAL_BLOCK.get());
+                        pOutput.accept(ModBlocks.RAW_BOEREWORS_BLOCK.get());
+                        pOutput.accept(ModBlocks.COOKED_BOEREWORS_BLOCK.get());
+                        pOutput.accept(ModBlocks.BOEREWORS_ROLL_BLOCK.get());
 
                         // Add ores to the creative tab
                         pOutput.accept(ModBlocks.ZENITH_CRYSTAL_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_ZENITH_CRYSTAL_ORE.get());
                         pOutput.accept(ModBlocks.NETHER_ZENITH_CRYSTAL_ORE.get());
                         pOutput.accept(ModBlocks.END_STONE_ZENITH_CRYSTAL_ORE.get());
+                        pOutput.accept(ModBlocks.BOEREWORS_ORE.get());
+                        pOutput.accept(ModBlocks.DEEPSLATE_BOEREWORS_ORE.get());
+                        pOutput.accept(ModBlocks.NETHER_BOEREWORS_ORE.get());
+                        pOutput.accept(ModBlocks.END_STONE_BOEREWORS_ORE.get());
 
                     })
                     .build());
