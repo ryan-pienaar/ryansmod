@@ -2,6 +2,12 @@
   "item.ryansmod.zenith_crystal": "Zenith Crystal",
   "item.ryansmod.raw_zenith_crystal": "Raw Zenith Crystal",
 
+  "item.ryansmod.zenith_crystal_sword": "Zenith Crystal Sword",
+    "item.ryansmod.zenith_crystal_pickaxe": "Zenith Crystal Pickaxe",
+    "item.ryansmod.zenith_crystal_axe": "Zenith Crystal Axe",
+    "item.ryansmod.zenith_crystal_shovel": "Zenith Crystal Shovel",
+    "item.ryansmod.zenith_crystal_hoe": "Zenith Crystal Hoe",
+
   "item.ryansmod.raw_boerewors": "Raw Boerewors",
   "item.ryansmod.cooked_boerewors": "Cooked Boerewors",
   "item.ryansmod.boerewors_roll": "Boerewors Roll",
