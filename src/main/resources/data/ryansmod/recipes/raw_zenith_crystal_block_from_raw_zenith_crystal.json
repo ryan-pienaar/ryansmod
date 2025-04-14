@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+      "###",
+      "###",
+      "###"
+    ],
+  "key": {
+    "#": {
+      "item": "ryansmod:raw_zenith_crystal"
+    }
+  },
+    "result": {
+        "item": "ryansmod:raw_zenith_crystal_block",
+        "count": 1
+    }
+}

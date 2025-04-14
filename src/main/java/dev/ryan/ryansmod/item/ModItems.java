@@ -1,6 +1,7 @@
 package dev.ryan.ryansmod.item;
 
 import dev.ryan.ryansmod.RyansMod;
+import dev.ryan.ryansmod.item.custom.OreDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -12,6 +13,24 @@ public class ModItems {
 
     public static final RegistryObject<Item> ZENITH_CRYSTAL = ITEMS.register("zenith_crystal",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> RAW_ZENITH_CRYSTAL = ITEMS.register("raw_zenith_crystal",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> ORE_DETECTOR = ITEMS.register("ore_detector",
+            () -> new OreDetectorItem(new Item.Properties().durability(150)));
+
+    //Boerewors
+    public static final RegistryObject<Item> RAW_BOEREWORS = ITEMS.register("raw_boerewors",
+            () -> new Item(new Item.Properties().food(ModFoods.RAW_BOEREWORS)));
+
+    //Cooked Boerewors
+    public static final RegistryObject<Item> COOKED_BOEREWORS = ITEMS.register("cooked_boerewors",
+            () -> new Item(new Item.Properties().food(ModFoods.COOKED_BOEREWORS)));
+
+    //Boerewors Roll
+    public static final RegistryObject<Item> BOEREWORS_ROLL = ITEMS.register("boerewors_roll",
+            () -> new Item(new Item.Properties().food(ModFoods.BOEREWORS_ROLL)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
