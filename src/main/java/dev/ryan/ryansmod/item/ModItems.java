@@ -2,7 +2,7 @@ package dev.ryan.ryansmod.item;
 
 import dev.ryan.ryansmod.RyansMod;
 import dev.ryan.ryansmod.item.custom.OreDetectorItem;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -31,6 +31,21 @@ public class ModItems {
     //Boerewors Roll
     public static final RegistryObject<Item> BOEREWORS_ROLL = ITEMS.register("boerewors_roll",
             () -> new Item(new Item.Properties().food(ModFoods.BOEREWORS_ROLL)));
+
+    public static final RegistryObject<Item> ZENITH_CRYSTAL_SWORD = ITEMS.register("zenith_crystal_sword",
+            () -> new SwordItem(ModToolTiers.ZENITH_CRYSTAL, 11,2.0F, new Item.Properties()));
+
+    public static final RegistryObject<Item> ZENITH_CRYSTAL_PICKAXE = ITEMS.register("zenith_crystal_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.ZENITH_CRYSTAL, 4,1.0F, new Item.Properties()));
+
+    public static final RegistryObject<Item> ZENITH_CRYSTAL_AXE = ITEMS.register("zenith_crystal_axe",
+            () -> new AxeItem(ModToolTiers.ZENITH_CRYSTAL, 7,1.5F, new Item.Properties()));
+
+    public static final RegistryObject<Item> ZENITH_CRYSTAL_SHOVEL = ITEMS.register("zenith_crystal_shovel",
+            () -> new ShovelItem(ModToolTiers.ZENITH_CRYSTAL, 4,1.0F, new Item.Properties()));
+
+    public static final RegistryObject<Item> ZENITH_CRYSTAL_HOE = ITEMS.register("zenith_crystal_hoe",
+            () -> new HoeItem(ModToolTiers.ZENITH_CRYSTAL, 3,1.0F, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

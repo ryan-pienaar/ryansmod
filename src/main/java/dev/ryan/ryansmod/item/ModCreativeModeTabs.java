@@ -46,6 +46,13 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.NETHER_BOEREWORS_ORE.get());
                         pOutput.accept(ModBlocks.END_STONE_BOEREWORS_ORE.get());
 
+                        // Add tools to the creative tab
+                        pOutput.accept(ModItems.ZENITH_CRYSTAL_SWORD.get());
+                        pOutput.accept(ModItems.ZENITH_CRYSTAL_PICKAXE.get());
+                        pOutput.accept(ModItems.ZENITH_CRYSTAL_AXE.get());
+                        pOutput.accept(ModItems.ZENITH_CRYSTAL_SHOVEL.get());
+                        pOutput.accept(ModItems.ZENITH_CRYSTAL_HOE.get());
+
                     })
                     .build());
 

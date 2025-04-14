@@ -13,6 +13,8 @@ public class ModTags {
 
         public static final TagKey<Block> ORE_DETECTOR_VALUABLES = tag("ore_detector_valuables");
 
+        public static final TagKey<Block> NEEDS_ZENITH_CRYSTAL_TOOL = tag("needs_zenith_crystal_tool");
+
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(RyansMod.MOD_ID, name));
         }

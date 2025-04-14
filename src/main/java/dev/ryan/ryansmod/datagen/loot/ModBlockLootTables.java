@@ -44,19 +44,19 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         );
 
         this.add(ModBlocks.BOEREWORS_ORE.get(),
-                block -> createBoereworsOreDrops(ModBlocks.BOEREWORS_ORE.get(), ModItems.RAW_ZENITH_CRYSTAL.get())
+                block -> createBoereworsOreDrops(ModBlocks.BOEREWORS_ORE.get(), ModItems.RAW_BOEREWORS.get())
         );
 
         this.add(ModBlocks.DEEPSLATE_BOEREWORS_ORE.get(),
-                block -> createBoereworsOreDrops(ModBlocks.DEEPSLATE_BOEREWORS_ORE.get(), ModItems.RAW_ZENITH_CRYSTAL.get())
+                block -> createBoereworsOreDrops(ModBlocks.DEEPSLATE_BOEREWORS_ORE.get(), ModItems.RAW_BOEREWORS.get())
         );
 
         this.add(ModBlocks.NETHER_BOEREWORS_ORE.get(),
-                block -> createBoereworsOreDrops(ModBlocks.NETHER_BOEREWORS_ORE.get(), ModItems.RAW_ZENITH_CRYSTAL.get())
+                block -> createBoereworsOreDrops(ModBlocks.NETHER_BOEREWORS_ORE.get(), ModItems.RAW_BOEREWORS.get())
         );
 
         this.add(ModBlocks.END_STONE_BOEREWORS_ORE.get(),
-                block -> createBoereworsOreDrops(ModBlocks.END_STONE_BOEREWORS_ORE.get(), ModItems.RAW_ZENITH_CRYSTAL.get())
+                block -> createBoereworsOreDrops(ModBlocks.END_STONE_BOEREWORS_ORE.get(), ModItems.RAW_BOEREWORS.get())
         );
     }
 

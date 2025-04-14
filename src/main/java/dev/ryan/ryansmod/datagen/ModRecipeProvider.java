@@ -85,6 +85,51 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.COOKED_BOEREWORS.get()), has(ModItems.COOKED_BOEREWORS.get()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ZENITH_CRYSTAL_SWORD.get())
+                .pattern(" Z ")
+                .pattern(" Z ")
+                .pattern(" S ")
+                .define('Z', ModItems.ZENITH_CRYSTAL.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.ZENITH_CRYSTAL.get()), has(ModItems.ZENITH_CRYSTAL.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ZENITH_CRYSTAL_AXE.get())
+                .pattern("ZZZ")
+                .pattern("ZS ")
+                .pattern(" S ")
+                .define('Z', ModItems.ZENITH_CRYSTAL.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.ZENITH_CRYSTAL.get()), has(ModItems.ZENITH_CRYSTAL.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ZENITH_CRYSTAL_PICKAXE.get())
+                .pattern("ZZZ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('Z', ModItems.ZENITH_CRYSTAL.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.ZENITH_CRYSTAL.get()), has(ModItems.ZENITH_CRYSTAL.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ZENITH_CRYSTAL_SHOVEL.get())
+                .pattern(" Z ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('Z', ModItems.ZENITH_CRYSTAL.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.ZENITH_CRYSTAL.get()), has(ModItems.ZENITH_CRYSTAL.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ZENITH_CRYSTAL_HOE.get())
+                .pattern("ZZ ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('Z', ModItems.ZENITH_CRYSTAL.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.ZENITH_CRYSTAL.get()), has(ModItems.ZENITH_CRYSTAL.get()))
+                .save(pWriter);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ZENITH_CRYSTAL.get(), 9)
                 .requires(ModBlocks.ZENITH_CRYSTAL_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.ZENITH_CRYSTAL_BLOCK.get()), has(ModBlocks.ZENITH_CRYSTAL_BLOCK.get()))

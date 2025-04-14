@@ -43,12 +43,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         );
 
-        this.tag(BlockTags.NEEDS_STONE_TOOL).add(
-                ModBlocks.BOEREWORS_ORE.get(),
-                ModBlocks.DEEPSLATE_BOEREWORS_ORE.get(),
-                ModBlocks.NETHER_BOEREWORS_ORE.get(),
-                ModBlocks.END_STONE_BOEREWORS_ORE.get()
-        );
+        this.tag(BlockTags.NEEDS_STONE_TOOL);
 
         this.tag(BlockTags.NEEDS_IRON_TOOL);
 
@@ -62,6 +57,13 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 ModBlocks.ZENITH_CRYSTAL_BLOCK.get(),
                 ModBlocks.RAW_ZENITH_CRYSTAL_BLOCK.get()
         );
+        this.tag(ModTags.Blocks.NEEDS_ZENITH_CRYSTAL_TOOL).add(
+                ModBlocks.BOEREWORS_ORE.get(),
+                ModBlocks.DEEPSLATE_BOEREWORS_ORE.get(),
+                ModBlocks.NETHER_BOEREWORS_ORE.get(),
+                ModBlocks.END_STONE_BOEREWORS_ORE.get()
+        );
+
 
     }
 }

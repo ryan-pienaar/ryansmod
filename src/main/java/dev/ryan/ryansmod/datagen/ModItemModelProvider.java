@@ -22,6 +22,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.RAW_ZENITH_CRYSTAL);
         simpleItem(ModItems.ORE_DETECTOR);
 
+        handheldItem(ModItems.ZENITH_CRYSTAL_SWORD);
+        handheldItem(ModItems.ZENITH_CRYSTAL_PICKAXE);
+        handheldItem(ModItems.ZENITH_CRYSTAL_AXE);
+        handheldItem(ModItems.ZENITH_CRYSTAL_SHOVEL);
+        handheldItem(ModItems.ZENITH_CRYSTAL_HOE);
+
         simpleItem(ModItems.BOEREWORS_ROLL);
         simpleItem(ModItems.RAW_BOEREWORS);
         simpleItem(ModItems.COOKED_BOEREWORS);
@@ -30,6 +36,12 @@ public class ModItemModelProvider extends ItemModelProvider {
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
                 ResourceLocation.parse("item/generated")).texture("layer0",
-                ResourceLocation.tryBuild(RyansMod.MOD_ID, "item/" + item.getId().getPath()));
+                ResourceLocation.fromNamespaceAndPath(RyansMod.MOD_ID, "item/" + item.getId().getPath()));
+    }
+
+    private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/handheld")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(RyansMod.MOD_ID, "item/" + item.getId().getPath()));
     }
 }
