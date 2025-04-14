@@ -23,7 +23,7 @@ public class ModCreativeModeTabs {
                         // Add items to the creative tab
                         pOutput.accept(ModItems.ZENITH_CRYSTAL.get());
                         pOutput.accept(ModItems.RAW_ZENITH_CRYSTAL.get());
-                        pOutput.accept(ModItems.ZENITH_CRYSTAL_ORE_DETECTOR.get());
+                        pOutput.accept(ModItems.ORE_DETECTOR.get());
 
                         //Boerewors items
                         pOutput.accept(ModItems.RAW_BOEREWORS.get());

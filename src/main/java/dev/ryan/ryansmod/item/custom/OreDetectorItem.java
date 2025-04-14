@@ -1,6 +1,7 @@
 package dev.ryan.ryansmod.item.custom;
 
 import dev.ryan.ryansmod.block.ModBlocks;
+import dev.ryan.ryansmod.util.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionResult;
@@ -15,9 +16,9 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class ZenithCrystalOreDetectorItem extends Item {
+public class OreDetectorItem extends Item {
 
-    public ZenithCrystalOreDetectorItem(Properties pProperties) {
+    public OreDetectorItem(Properties pProperties) {
         super(pProperties);
     }
 
@@ -51,7 +52,7 @@ public class ZenithCrystalOreDetectorItem extends Item {
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(Component.translatable("tooltip.ryansmod.zenith_crystal_ore_detector.tooltip"));
+        pTooltipComponents.add(Component.translatable("tooltip.ryansmod.ore_detector.tooltip"));
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
     }
 
@@ -60,9 +61,6 @@ public class ZenithCrystalOreDetectorItem extends Item {
     }
 
     private boolean isValuableBlock(BlockState state) {
-        return state.is(ModBlocks.ZENITH_CRYSTAL_ORE.get()) ||
-                state.is(ModBlocks.DEEPSLATE_ZENITH_CRYSTAL_ORE.get()) ||
-                state.is(ModBlocks.NETHER_ZENITH_CRYSTAL_ORE.get()) ||
-                state.is(ModBlocks.END_STONE_ZENITH_CRYSTAL_ORE.get());
+        return state.is(ModTags.Blocks.ORE_DETECTOR_VALUABLES);
     }
 }
