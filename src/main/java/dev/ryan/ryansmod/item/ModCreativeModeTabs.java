@@ -16,7 +16,7 @@ public class ModCreativeModeTabs {
 
     public static final RegistryObject<CreativeModeTab> RYANS_MOD_TAB = CREATIVE_MODE_TABS.register("ryans_mod_tab",
             () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(ModItems.ZENITH_CRYSTAL.get()))
+                    .icon(() -> new ItemStack(ModItems.COOKED_BOEREWORS.get()))
                     .title(Component.translatable("creativetab.ryans_mod_tab"))
                     .displayItems((pParameters, pOutput) -> {
 
