@@ -22,11 +22,11 @@ public class ModItems {
 
     //Boerewors
     public static final RegistryObject<Item> RAW_BOEREWORS = ITEMS.register("raw_boerewors",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoods.RAW_BOEREWORS)));
 
     //Cooked Boerewors
     public static final RegistryObject<Item> COOKED_BOEREWORS = ITEMS.register("cooked_boerewors",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoods.COOKED_BOEREWORS)));
 
     //Boerewors Roll
     public static final RegistryObject<Item> BOEREWORS_ROLL = ITEMS.register("boerewors_roll",
