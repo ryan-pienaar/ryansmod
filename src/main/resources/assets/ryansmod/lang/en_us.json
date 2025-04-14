@@ -7,6 +7,7 @@
   "item.ryansmod.boerewors_roll": "Boerewors Roll",
 
   "item.ryansmod.zenith_crystal_ore_detector": "Zenith Crystal Ore Detector",
+  "item.ryansmod.zenith_crystal_ore_detector.tooltip": "Finds Zenith Crystal Ore in a up to 64 blocks below",
 
   "block.ryansmod.zenith_crystal_block": "Block of Zenith Crystal",
   "block.ryansmod.raw_zenith_crystal_block": "Block of Raw Zenith Crystal",

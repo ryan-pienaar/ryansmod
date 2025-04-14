@@ -30,7 +30,7 @@ public class ModItems {
 
     //Boerewors Roll
     public static final RegistryObject<Item> BOEREWORS_ROLL = ITEMS.register("boerewors_roll",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoods.BOEREWORS_ROLL)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -58,12 +58,12 @@ public class ModBlocks {
             ));
 
     // Raw Boerewors Block
-    public static final RegistryObject<Block> RAW_BOEREWORS_BLOCK = register("raw_boerewors_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL).sound(SoundType.WOOL)));
+    //public static final RegistryObject<Block> RAW_BOEREWORS_BLOCK = register("raw_boerewors_block",
+    //        () -> new Block(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL).sound(SoundType.WOOL)));
 
     // Cooked Boerewors Block
-    public static final RegistryObject<Block> COOKED_BOEREWORS_BLOCK = register("cooked_boerewors_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL).sound(SoundType.WOOL)));
+    //public static final RegistryObject<Block> COOKED_BOEREWORS_BLOCK = register("cooked_boerewors_block",
+    //        () -> new Block(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL).sound(SoundType.WOOL)));
 
     // Boerewors Ore
     public static final RegistryObject<Block> BOEREWORS_ORE = register("boerewors_ore",

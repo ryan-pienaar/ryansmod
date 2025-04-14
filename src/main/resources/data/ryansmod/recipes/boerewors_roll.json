@@ -2,17 +2,20 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-      "###",
-      "###",
-      "###"
+      "   ",
+      " # ",
+      "B  "
     ],
   "key": {
     "#": {
       "item": "ryansmod:cooked_boerewors"
+    },
+    "B": {
+      "item": "minecraft:bread"
     }
   },
     "result": {
-        "item": "ryansmod:cooked_boerewors_block",
+        "item": "ryansmod:boerewors_roll",
         "count": 1
     }
 }
